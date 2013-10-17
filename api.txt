@@ -1,0 +1,18 @@
+/device/register
+	input:
+		key
+	output:
+		identity
+		
+/browser/register
+	input:
+		identity
+	output:
+		statusCode
+
+/push
+	input:
+		identity
+		url
+	output:
+		statusCode
