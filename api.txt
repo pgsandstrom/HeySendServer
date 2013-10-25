@@ -1,18 +1,18 @@
 /device/register
 	input:
-		key
+		gcmKey, name(voluntary)
 	output:
-		identity
+		name
 		
 /browser/register
 	input:
-		identity
+		name
 	output:
 		statusCode
 
 /push
 	input:
-		identity
+		name
 		url
 	output:
 		statusCode

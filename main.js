@@ -1,5 +1,4 @@
 var http = require('http');
-//var redis = require('./redisHandler.js');
 var gcm = require('./gcmHandler.js');
 var url = require('url');
 
@@ -18,8 +17,9 @@ var server = http.createServer(function (request, response) {
             break;
         case '/device/register/':
         case '/device/register':
+
             response.writeHead(200, {"Content-Type": "text/plain"});
-            response.end("lol\n");
+            response.end("lol: " + hash + "\n");
             break;
         case '/browser/register/':
         case '/browser/register':
